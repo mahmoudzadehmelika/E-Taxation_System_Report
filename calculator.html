@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>محاسبه مالیات | E-Taxation_System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="calculator-page">
+
+  <header class="simple-header">
+    <div class="container simple-header-content">
+      <div>
+        <h1>محاسبه ساده مالیات</h1>
+        <p>محاسبه تقریبی مالیات بر اساس مبلغ درآمد سالانه</p>
+      </div>
+      <a href="index.html" class="btn btn-outline">صفحه اصلی</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="calculator-wrapper">
+
+      <div class="calculator-info">
+        <span class="badge">محاسبه آزمایشی</span>
+        <h2>ماشین حساب مالیاتی</h2>
+        <p>
+          مبلغ درآمد سالانه خود را وارد کنید تا سامانه، مالیات تقریبی را بر اساس نرخ ساده‌شده محاسبه کند.
+        </p>
+
+        <div class="tax-rules">
+          <h3>نرخ‌های نمونه محاسبه</h3>
+          <ul>
+            <li>تا ۱۰۰ میلیون تومان: ۱۰٪</li>
+            <li>از ۱۰۰ تا ۳۰۰ میلیون تومان: ۱۵٪</li>
+            <li>بیشتر از ۳۰۰ میلیون تومان: ۲۰٪</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="calculator-card">
+        <div class="form-group">
+          <label for="incomeInput">درآمد سالانه، به تومان</label>
+          <input 
+            type="number" 
+            id="incomeInput" 
+            placeholder="مثلاً 250000000"
+          >
+        </div>
+
+        <button id="calculateBtn" class="btn btn-primary full-width">
+          محاسبه مالیات
+        </button>
+
+        <div id="resultBox" class="result-box hidden">
+          <h3>نتیجه محاسبه</h3>
+
+          <div class="result-row">
+            <span>درآمد واردشده:</span>
+            <strong id="incomeResult">-</strong>
+          </div>
+
+          <div class="result-row">
+            <span>نرخ مالیات:</span>
+            <strong id="rateResult">-</strong>
+          </div>
+
+          <div class="result-row final-result">
+            <span>مالیات تقریبی:</span>
+            <strong id="taxResult">-</strong>
+          </div>
+        </div>
+
+        <p class="form-note">
+          این محاسبه صرفاً نمونه و مناسب پروژه دانشجویی است و ارزش قانونی ندارد.
+        </p>
+      </div>
+
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
