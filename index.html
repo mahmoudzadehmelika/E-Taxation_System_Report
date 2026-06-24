@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Taxation_System</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <div class="container topbar">
+        <a href="index.html" class="brand" aria-label="E-Taxation_System Home">
+          <span class="brand-mark">ET</span>
+          <span class="brand-text">
+            <strong>E-Taxation_System</strong>
+            <small data-i18n="brandSubtitle">Electronic Tax Services Portal</small>
+          </span>
+        </a>
+
+        <div class="header-actions">
+          <button class="ghost-btn" id="langToggle" type="button">EN</button>
+          <button class="ghost-btn" id="themeToggle" type="button" data-i18n="themeButton">Night Mode</button>
+        </div>
+      </div>
+
+      <div class="container hero-grid">
+        <section class="hero-copy card glass-card">
+          <span class="eyebrow" data-i18n="eyebrow">National Electronic Tax Platform</span>
+          <h1 data-i18n="heroTitle">Integrated Taxpayer Service Gateway</h1>
+          <p data-i18n="heroText">Secure access to core tax services, operational forms and simplified calculation tools in a professional demonstration environment.</p>
+          <div class="hero-cta">
+            <a class="primary-btn" href="calculator.html" data-i18n="heroCalc">Simple Tax Calculator</a>
+            <a class="secondary-btn" href="#services" data-i18n="heroServices">View Tax Services</a>
+          </div>
+        </section>
+
+        <aside class="hero-panel card">
+          <div class="panel-row">
+            <span data-i18n="panel1">Service Status</span>
+            <strong data-i18n="panel1Value">Active</strong>
+          </div>
+          <div class="panel-row">
+            <span data-i18n="panel2">Portal Scope</span>
+            <strong data-i18n="panel2Value">Electronic Services</strong>
+          </div>
+          <div class="panel-row no-border">
+            <span data-i18n="panel3">Access Level</span>
+            <strong data-i18n="panel3Value">Public Demo</strong>
+          </div>
+        </aside>
+      </div>
+    </header>
+
+    <main class="container main-content">
+      <section class="feature-strip card">
+        <div>
+          <span class="strip-label" data-i18n="stripLabel">Quick Access</span>
+          <h2 data-i18n="stripTitle">Simple Tax Calculation</h2>
+          <p data-i18n="stripText">Estimate your payable tax amount instantly based on annual income.</p>
+        </div>
+        <a class="primary-btn" href="calculator.html" data-i18n="stripButton">Open Calculator</a>
+      </section>
+
+      <section class="services-section" id="services">
+        <div class="section-heading">
+          <span data-i18n="servicesEyebrow">Tax Systems Directory</span>
+          <h2 data-i18n="servicesTitle">Tax Systems and Electronic Services</h2>
+        </div>
+
+        <div class="services-grid">
+          <a class="service-card card interactive" href="login.html">
+            <span class="service-index">01</span>
+            <h3 data-i18n="service1Title">Electronic Registration and Economic Number Issuance</h3>
+            <p data-i18n="service1Text">Access secure taxpayer registration and sign-in form.</p>
+            <span class="service-link" data-i18n="serviceEnter">Enter Service</span>
+          </a>
+
+          <a class="service-card card" href="#">
+            <span class="service-index">02</span>
+            <h3 data-i18n="service2Title">Payroll Tax List Submission</h3>
+            <p data-i18n="service2Text">Review and submit payroll tax records in a simplified view.</p>
+            <span class="service-link muted" data-i18n="servicePreview">Preview Service</span>
+          </a>
+
+          <a class="service-card card" href="#">
+            <span class="service-index">03</span>
+            <h3 data-i18n="service3Title">Objection to Assessment Notices and Withdrawal</h3>
+            <p data-i18n="service3Text">View the objection submission section for tax assessment notices.</p>
+            <span class="service-link muted" data-i18n="servicePreview">Preview Service</span>
+          </a>
+
+          <a class="service-card card" href="#">
+            <span class="service-index">04</span>
+            <h3 data-i18n="service4Title">Tax Debt Inquiry</h3>
+            <p data-i18n="service4Text">Check taxpayer debt inquiry service interface.</p>
+            <span class="service-link muted" data-i18n="servicePreview">Preview Service</span>
+          </a>
+
+          <a class="service-card card interactive" href="receipt.html">
+            <span class="service-index">05</span>
+            <h3 data-i18n="service5Title">Tax Bill Issuance</h3>
+            <p data-i18n="service5Text">Generate a simple tax bill and review issued payment details.</p>
+            <span class="service-link" data-i18n="serviceEnter">Enter Service</span>
+          </a>
+
+          <a class="service-card card" href="#">
+            <span class="service-index">06</span>
+            <h3 data-i18n="service6Title">Transfer Tax for Non-Listed Company Shares</h3>
+            <p data-i18n="service6Text">Open the share transfer tax payment information view.</p>
+            <span class="service-link muted" data-i18n="servicePreview">Preview Service</span>
+          </a>
+
+          <a class="service-card card" href="#">
+            <span class="service-index">07</span>
+            <h3 data-i18n="service7Title">Electronic Taxpayer Support</h3>
+            <p data-i18n="service7Text">Browse the support request and user assistance section.</p>
+            <span class="service-link muted" data-i18n="servicePreview">Preview Service</span>
+          </a>
+
+          <a class="service-card card" href="#">
+            <span class="service-index">08</span>
+            <h3 data-i18n="service8Title">Penalty Relief Request</h3>
+            <p data-i18n="service8Text">Open the relief request form overview for tax penalties.</p>
+            <span class="service-link muted" data-i18n="servicePreview">Preview Service</span>
+          </a>
+
+          <a class="service-card card" href="#">
+            <span class="service-index">09</span>
+            <h3 data-i18n="service9Title">Taxpayer Notices and Notifications</h3>
+            <p data-i18n="service9Text">Review a sample list of taxpayer announcements and notices.</p>
+            <span class="service-link muted" data-i18n="servicePreview">Preview Service</span>
+          </a>
+
+          <a class="service-card card" href="#">
+            <span class="service-index">10</span>
+            <h3 data-i18n="service10Title">Inheritance Tax Return</h3>
+            <p data-i18n="service10Text">Access the inheritance tax return service preview page.</p>
+            <span class="service-link muted" data-i18n="servicePreview">Preview Service</span>
+          </a>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

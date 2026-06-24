@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>قبض مالیاتی | E-Taxation_System</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="inner-page">
+  <main class="container inner-layout">
+    <section class="page-top">
+      <a href="index.html" class="back-anchor" data-i18n="backHome">Back to Portal</a>
+      <div class="header-actions inner-actions">
+        <button class="ghost-btn" id="langToggle" type="button">EN</button>
+        <button class="ghost-btn" id="themeToggle" type="button" data-i18n="themeButton">Night Mode</button>
+      </div>
+    </section>
+
+    <section class="split-grid single-center">
+      <article class="card wide-card">
+        <span class="eyebrow" data-i18n="receiptEyebrow">Payment Document Service</span>
+        <h1 data-i18n="receiptTitle">Tax Bill Issuance</h1>
+        <p class="page-text" data-i18n="receiptText">Create a sample tax bill and review the issued reference information instantly.</p>
+
+        <div class="form-grid">
+          <div class="field">
+            <label for="payerName" data-i18n="receiptField1">Taxpayer Name</label>
+            <input id="payerName" type="text" placeholder="نام مودی">
+          </div>
+          <div class="field">
+            <label for="billAmount" data-i18n="receiptField2">Bill Amount</label>
+            <input id="billAmount" type="number" placeholder="5000000">
+          </div>
+          <button id="issueReceiptBtn" class="primary-btn full-btn" type="button" data-i18n="receiptButton">Issue Bill</button>
+        </div>
+
+        <section id="receiptResult" class="result-box hidden">
+          <div class="result-row">
+            <span data-i18n="receiptName">Taxpayer</span>
+            <strong id="receiptNameValue">-</strong>
+          </div>
+          <div class="result-row">
+            <span data-i18n="receiptAmount">Amount</span>
+            <strong id="receiptAmountValue">-</strong>
+          </div>
+          <div class="result-row">
+            <span data-i18n="receiptBillId">Bill ID</span>
+            <strong id="receiptBillIdValue">-</strong>
+          </div>
+          <div class="result-row no-border">
+            <span data-i18n="receiptPayId">Payment ID</span>
+            <strong id="receiptPayIdValue">-</strong>
+          </div>
+        </section>
+      </article>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

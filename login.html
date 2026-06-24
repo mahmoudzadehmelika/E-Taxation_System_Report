@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ورود | E-Taxation_System</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="inner-page">
+  <main class="container inner-layout auth-layout">
+    <section class="page-top">
+      <a href="index.html" class="back-anchor" data-i18n="backHome">Back to Portal</a>
+      <div class="header-actions inner-actions">
+        <button class="ghost-btn" id="langToggle" type="button">EN</button>
+        <button class="ghost-btn" id="themeToggle" type="button" data-i18n="themeButton">Night Mode</button>
+      </div>
+    </section>
+
+    <section class="auth-card card wide-card">
+      <span class="eyebrow" data-i18n="loginEyebrow">Protected Access</span>
+      <h1 data-i18n="loginTitle">Electronic Registration and Economic Number Access</h1>
+      <p class="page-text" data-i18n="loginText">Use the demonstration sign-in form to access the taxpayer registration gateway.</p>
+
+      <form class="form-grid">
+        <div class="field">
+          <label for="identifier" data-i18n="loginField1">National ID / Legal Entity ID</label>
+          <input id="identifier" type="text" placeholder="0012345678">
+        </div>
+        <div class="field">
+          <label for="password" data-i18n="loginField2">Password</label>
+          <input id="password" type="password" placeholder="••••••••">
+        </div>
+        <button class="primary-btn full-btn" type="button" data-i18n="loginButton">Sign In</button>
+      </form>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

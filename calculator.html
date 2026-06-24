@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>محاسبه مالیات | E-Taxation_System</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="inner-page">
+  <main class="container inner-layout">
+    <section class="page-top">
+      <a href="index.html" class="back-anchor" data-i18n="backHome">Back to Portal</a>
+      <div class="header-actions inner-actions">
+        <button class="ghost-btn" id="langToggle" type="button">EN</button>
+        <button class="ghost-btn" id="themeToggle" type="button" data-i18n="themeButton">Night Mode</button>
+      </div>
+    </section>
+
+    <section class="split-grid">
+      <article class="card wide-card">
+        <span class="eyebrow" data-i18n="calcEyebrow">Tax Estimation Service</span>
+        <h1 data-i18n="calcTitle">Simple Tax Calculator</h1>
+        <p class="page-text" data-i18n="calcText">Enter annual income to calculate an estimated tax amount using a simplified rate structure.</p>
+        <div class="rules-box">
+          <h3 data-i18n="calcRulesTitle">Sample Rates</h3>
+          <ul>
+            <li data-i18n="rule1">Up to 100,000,000 Toman: 10%</li>
+            <li data-i18n="rule2">100,000,001 to 300,000,000 Toman: 15%</li>
+            <li data-i18n="rule3">Above 300,000,000 Toman: 20%</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="card wide-card">
+        <div class="field">
+          <label for="incomeInput" data-i18n="calcField">Annual Income</label>
+          <input id="incomeInput" type="number" placeholder="250000000">
+        </div>
+        <button id="calculateBtn" class="primary-btn full-btn" type="button" data-i18n="calcButton">Calculate Tax</button>
+
+        <section id="resultBox" class="result-box hidden">
+          <div class="result-row">
+            <span data-i18n="resultIncome">Declared Income</span>
+            <strong id="incomeResult">-</strong>
+          </div>
+          <div class="result-row">
+            <span data-i18n="resultRate">Applied Rate</span>
+            <strong id="rateResult">-</strong>
+          </div>
+          <div class="result-row no-border">
+            <span data-i18n="resultTax">Estimated Tax</span>
+            <strong id="taxResult">-</strong>
+          </div>
+        </section>
+      </article>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
